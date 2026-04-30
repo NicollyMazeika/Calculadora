@@ -1,6 +1,7 @@
 package operacoes;
 
 
+import entradaNumeros.EntradaNumeros;
 import java.util.Scanner;
 
 /*
@@ -12,11 +13,12 @@ import java.util.Scanner;
  *
  * @author info226
  */
-public class Soma {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        System.out.println(x+y);
+public class Soma extends EntradaNumeros {
+
+        public static void main(String[] args) {
+           EntradaNumeros entradaNumeros = new EntradaNumeros();
+           entradaNumeros.lerNumeros();
+           
+        System.out.println(entradaNumeros.x+entradaNumeros.y);
     }
 }
